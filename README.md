@@ -14,19 +14,19 @@ Nombre de la colección:
 
 La API del proyecto es:
 
-`GET /chat/api/messages` -> JSON con todos los mensajes que se han enviado.
+* `GET /chat/api/messages` -> JSON con todos los mensajes que se han enviado.
 
-`POST /chat/api/messages` -> envía un JSON para enviar un mensaje al chat. El JSON debe tener el siguiente formato:
+* `GET /chat/api/messages/{{ts}}` -> JSON del mensaje con timestamp (ts) dado.
+
+* `POST /chat/api/messages` -> envía un JSON para enviar un mensaje al chat. El JSON debe tener el siguiente formato:
 
 > { "message": "Mensaje a enviar", "author": "Autor del mensaje" }
 
-`GET /chat/api/messages/{{ts}}` -> JSON del mensaje con timestamp (ts) dado.
-
-`PUT /chat/api/messages/` -> envía un JSON para actualizar el mensaje con timestamp (ts) dado. El JSON debe tener el siguiente formato:
+* `PUT /chat/api/messages/` -> envía un JSON para actualizar el mensaje con timestamp (ts) dado. El JSON debe tener el siguiente formato:
 
 > { "message": "Mensaje a enviar", "author": "Autor del mensaje", "ts":timestamp del mensaje a actualizar }
 
-`DELETE /chat/api/messages/{{ts}}` -> borra el mensaje con el timestamp (ts) dado.
+* `DELETE /chat/api/messages/{{ts}}` -> borra el mensaje con el timestamp (ts) dado.
 
 Restricciones:
 
