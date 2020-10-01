@@ -1,9 +1,6 @@
 # Reto-MongoDB
-# EjercicioMongo
 
-> Reto de Mongo del curso ISIS3710.
-
-Para ejecutar se debe poner el comando: `nodemon start`
+Para ejecutar se debe poner en consola el comando: `nodemon start`
 
 Luego, en el navegador entrar a la dirección localhost:3000. Se puede entrar al tiempo desde varias pestañas. En la página se pueden intercambiar mensajes usando un nombre de usuario.
 
