@@ -24,7 +24,7 @@ La API del proyecto es:
 
 * `PUT /chat/api/messages/` -> envía un JSON para actualizar el mensaje con timestamp (ts) dado. El JSON debe tener el siguiente formato:
 
-> { "message": "Mensaje a enviar", "author": "Autor del mensaje", "ts":timestamp del mensaje a actualizar }
+> { "message": "Mensaje a enviar", "author": "Autor del mensaje", "ts":"timestamp del mensaje a actualizar" }
 
 * `DELETE /chat/api/messages/{{ts}}` -> borra el mensaje con el timestamp (ts) dado.
 
